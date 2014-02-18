@@ -1,16 +1,19 @@
 
 <!--Divs -->
 #wrapper {
-	width: 80%;  
+	width: 100%;  
 	margin: 0 auto; 
 	border-left: 1px solid #000;
 	border-right: 1px solid #000;
 	background-color: #F4F4F4;
 	font-size: 100%;
+	text-align: center;
 	}
 
 #banner {
+	style: float: right;
 	border: 5px solid #395A88;
+	width: 80%;
 	height: 80px;
 	border-radius: 15px;
 	}
@@ -24,8 +27,8 @@
 		}
 
 #nav {
-	width: 10%;
-	float: right; 	
+	float: left;
+	width: 10%;	
    	vertical-align: top;
 	text-align: center;
 	padding:10px;
@@ -64,8 +67,10 @@
 		}
 
 #content{
+	float: right;
+	text-align: center;
 	margin-right: 0px;
-	width:89%;
+	width:80%;
   	padding: 5;
 	text-align: left;
 	}
