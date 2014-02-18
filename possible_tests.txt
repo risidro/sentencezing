@@ -12,6 +12,10 @@ Make sure that the database is able to take in stories with symbols( e.g. apostr
 
 -- Design tests -----
 
-( put design test stuff here )
+Make sure that none of the links are "broken". Go through every link on the page and make sure it goes to the correct page.
+
+Does the UI  meet the target audience.
+
+
 
 
