@@ -1,16 +1,23 @@
 
 <!--Divs -->
 #wrapper {
+<<<<<<< HEAD
 	width:80%;  
+=======
+	width: 100%;  
+>>>>>>> 99003b68e498bd7d2dbe232a6fd9639f653fcab3
 	margin: 0 auto; 
 	border-left: 1px solid #000;
 	border-right: 1px solid #000;
 	background-color: #F4F4F4;
 	font-size: 100%;
+	text-align: center;
 	}
 
 #banner {
+	style: float: right;
 	border: 5px solid #395A88;
+	width: 80%;
 	height: 80px;
 	border-radius: 15px;
 	}
@@ -24,8 +31,13 @@
 		}
 
 #nav {
+<<<<<<< HEAD
 	width: 140px;
 	float: left; 	
+=======
+	float: left;
+	width: 10%;	
+>>>>>>> 99003b68e498bd7d2dbe232a6fd9639f653fcab3
    	vertical-align: top;
 	text-align: center;
 	padding:5px;
@@ -64,6 +76,7 @@
 		}
 
 #content{
+<<<<<<< HEAD
 	margin-left: 0px;
 	margin-right:0px;
 	height: 550px;
@@ -71,6 +84,14 @@
   	padding:5;
 	text-align:left;
 		//background-color:gray;
+=======
+	float: right;
+	text-align: center;
+	margin-right: 0px;
+	width:80%;
+  	padding: 5;
+	text-align: left;
+>>>>>>> 99003b68e498bd7d2dbe232a6fd9639f653fcab3
 	}
 		#content p{
 		margin: 5px 15px 5px 15px;
