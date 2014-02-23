@@ -1,4 +1,11 @@
 Teamawesome::Application.routes.draw do
+<<<<<<< master
+=======
+  resources :microposts
+
+  resources :users
+
+>>>>>>> 5d5aba1 brian mergin
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

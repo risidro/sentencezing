@@ -1,4 +1,8 @@
+<<<<<<< master
 #!/usr/bin/env ruby1.9.1
+=======
+#!/usr/bin/env ruby
+>>>>>>> 5d5aba1 brian mergin
 APP_PATH = File.expand_path('../../config/application',  __FILE__)
 require_relative '../config/boot'
 require 'rails/commands'
