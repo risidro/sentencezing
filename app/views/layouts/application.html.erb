@@ -1,14 +1,54 @@
-<!DOCTYPE html>
-<html>
+<head>
 <head>
   <title>Teamawesome</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
+<link rel="stylesheet" type="text/css" href="index_css.css">
+</head>
 <body>
 
-<%= yield %>
+<!------------------------------------------ Main Div -------------------------------------------------------->
+<div id="wrapper">
+
+	<!---------------------------------------- Banner Div -------------------------------------------------------->
+	<div id="banner">
+    	<h1>SentenceZing</h1>
+	</div> 
+    <!----------------------------------------- End Banner Div -------------------------------------------------->
+    
+    
+    <!------------------------------------- Main menu bar div --------------------------------------->
+    <div id="nav">
+      <ul>
+		<li>Home</li>
+		<li><a href="accounts.html">Account</a></li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="voting.html">Voting</a></li>
+		<li><a href="contactus.html">Contact Us</a></li>
+	  </ul>
+
+    </div>
+    <!---------------------------------------- End Menu bar div ------------------------------------->
+	
+    
+    <!------------------------------------ Main content/body div ---------------------------------------->
+    
+    <%= yield %>
+    
+	</div> 
+    <!------------------------------- End Main content/body div ---------------------------------------->
+    
+    
+    <!--------------------------------------- Footer div ------------------------------------------------->
+    <div id="footer">
+    <p>footer info</p>
+    </div>  
+    <!------------------------------------- End Footer div ---------------------------------------------->
+   	
+</div>  
+<!---------------------------------------------- End Main div -------------------------------------------------->
 
 </body>
 </html>
