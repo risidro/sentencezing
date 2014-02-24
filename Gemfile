@@ -5,7 +5,7 @@ gem 'rails', '4.0.2'
 
 ruby '1.9.3'
 
-gem 'sqlite3'
+gem 'sqlite3', '1.3.8'
 
 group :development, :test do
   gem 'rspec-rails'
