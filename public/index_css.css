@@ -1,11 +1,11 @@
 
 <!--Divs -->
 #wrapper {
-	width:80%;  
+	width: 1200px;  
 	margin: 0 auto; 
-	border-left: 1px solid #000;
+	border-left: 1px solid red;
 	border-right: 1px solid #000;
-	background-color: #F4F4F4;
+	background-color: red;
 	font-size: 100%;
 	}
 
@@ -13,6 +13,7 @@
 	border: 5px solid #395A88;
 	height: 80px;
 	border-radius: 15px;
+	width: 1200px;
 	}
 
 		#banner h1{
@@ -24,11 +25,12 @@
 		}
 
 #nav {
-	width: 140px;
+	width: 130px;
 	float: left; 	
    	vertical-align: top;
 	text-align: center;
 	padding:5px;
+	//background-color:gray;	
 	}
 	
 		#nav ul{
@@ -64,12 +66,13 @@
 		}
 
 #content{
-	margin-left: 0px;
+	margin-left: 140px;
 	margin-right:0px;
 	height: 550px;
-		//width:88%;
+	width:1060px;
   	padding:5;
 	text-align:left;
+		//background-color:#EEBC5F;
 		//background-color:gray;
 	}
 		#content p{
@@ -81,6 +84,7 @@
 		alignment-adjust:central;
 			//width:80%;
 		text-align:left;
+		//background-color:#EEBC5F;
 		background-color:#F4F4F4;
 		margin:5px 15px 5px 15px;
 		}
@@ -93,15 +97,18 @@
 		height:50px;
     	text-align:center;
 		}
-	
+		
+		
 #content_left{
 	border-right: 2px solid #395A88;
-	border-bottom:2px solid #395A88;
-	width: 41%;
+	//border-bottom:2px solid #395A88;
+	width: 520px;
+	height:500px;
 	float: left;
 	vertical-align: top;
 	border-radius: 15px;
-	margin:5px 15px 5px 0px;
+	margin:0px 0px 0px 0px;
+		//background-color:#EEBC5F;
 		//border: 2px solid #395A88;
 		//background-color: gray;
 	}
@@ -117,22 +124,25 @@
 	
 	
 #content_right{
-	border-right: 2px solid #395A88;
-	border-bottom:2px solid #395A88;
-		//border: 2px solid #395A88;
-	width:41%;
+	border-left: 2px solid #395A88;
+	//border-bottom:2px solid #395A88;
+	//border: 2px solid #395A88;
+	width:520px;
 	float:right;
+	height:500px;
 	vertical-align:top;
+	//background-color: #EEBC5F;
 		//background-color: green;
 	border-radius: 15px;
-	margin: 5px 0px 5px 0px;
+	margin: 0px 0px 0px 0px;
 	}
 	
 #story1, #story2, #story3{
-	height:150px;
+	height:140px;
 	border: 1px solid #395A88;
 	margin: 5px 5px 5px 5px;
 	border-radius: 5px;
+	background-color:white;
 	}
 
 #footer{
@@ -148,33 +158,33 @@
 		color: #fff;
 		margin: 0;
 		}
-<!-- End of Divs -->
+<!----------------------------- End of Divs ----------------------------->
 
-<!-- body CSSs ->	
+
+<!------------------------------- body CSSs ------------------------------->	
 body {
 	margin: 0px;
 	padding: 0px;
-	background-color: lightsteelblue;
+	background-color: blue;
 	text-align: center;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	color: #666;
 	font-size: 100%;
 }
 
-<<<<<<< master
-h3 
-{
-=======
-h3 {
->>>>>>> 5d5aba1 brian mergin
-	text-align: center;   
-}
+body h3{
+		text-shadow: 5px 5px 6px dimgrey;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		text-align:center;
+		font-size: 20px;
+		margin: 20	px 120px 20px 15px;	
+		color: #395A88;
+		
+			
+		}
+	
 
-p {
-	text-align: center;
-}
-
-<!-- Modifiers -->
+<!------------------------ Modifiers ----------------------------------->
 
 .center
 {
@@ -183,5 +193,3 @@ p {
     width:70%;
     background-color:#b0e0e6;
 }
-
-

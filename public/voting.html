@@ -21,16 +21,16 @@
 </head>
 <body>
 
-<!------------------------- Main Div ------------------------------->
+<!---------------------------------------------------------------------- Wrapper Div --------------------------------->
 <div id="wrapper">
-
-
-	<!--------------------- Banner Div--------------------------------->
+	
+    <!----------------------------------------------------- Banner Div--------------------------------->
 	<div id="banner">
     	<h1>SentenceZing</h1>
-	</div> <!-- End Banner Div -->
+	</div> 
+    <!----------------------------------------------------- End Banner Div ---------------------------->
     
-    <!-- Main menu bar div -->
+    <!-------------------------------------- Main menu bar div ------------------------>
     <div id="nav">
     	<ul>
 			<li><a href="index.html">Home</a></li>
@@ -39,19 +39,22 @@
 			<li>Voting</li>
 			<li><a href="contactus.html">Contact Us</a></li>
 		</ul>
-    </div><!-- End Menu bar div -->
+    </div>
+    <!-------------------------------------- End Menu bar div ------------------------->
 	
-    <!----------------- Main content/body div ------------------->
+    
+    <!------------------------- Main content/body div ---------------------------->
     <div id="content">
     <h3>VOTING</h3>
-        <!----------------------- Left Div ------------------------>
+    	
+    	<!----------------------------------------------- Left Div --------------------------------------->
     	<div id="content_left">
-        	<table border="0" align="center">
-            	<tr>
-                	<th colspan="2" style="text-align:left">Filter Results</th>
-             	</tr>
+        	<p>
+            	<b>Filter Results</b>
+           </p>
             
-          		<tr>
+           <table border="0" align="center">
+            	<tr>
             		<td>Category:</td>
             		<td>
               		  <select name="category">
@@ -76,28 +79,31 @@
            	<tr>
            	 	<td>Date:</td>
            	 	<td>
-           		     <input type="text" id="Datepicker1" />
+           		     <input type="text" id="Datepicker1" placeholder="Pick a date" />
              	 	</td>
         		</tr>
-
-        		<tr>
-           	 	<td colspan="2" align="center"><input type="button" id="acc_submit" value="Search"></td>
-          		</tr>
-        	</table>
+			</table>
+           <br />
+           
+           <center>
+           	<input type="button" id="acc_submit" value="Search"> | 
+            	<input type="button" id="clear" value="Clear">
+           </center>
+           
+               
+          	<br />	
+       </div>
+		<!--------------------------------------- Left Div --------------------------------------->
         
-       		</div>
         
-        
-       <!------------------------------------ Right Div ------------------------------------->
+   		<!-------------------------------------- Right Div ---------------------------------------->
       	<div id="content_right">
-        	<table>
-            	<tr>
-                	<th colspan="2" style="text-align:left">Top Stories</th>
-             	</tr>
-        	</table>
-            
-          	<div id="story1">
-            	Story 1
+        	<p>
+            	<b>Top Stories</b>
+           </p>
+           
+           <div id="story1">
+           	Story 1
          	</div>
             
            <div id="story2">
@@ -108,20 +114,28 @@
             	Story 3
          	</div>	
             
-           <center><input type="button" id="load" value="Load More"></center>
+           <center>
+           	<input type="button" id="load" value="Load More">
+           </center>
+           
     	</div>
-    
+    	<!------------------------------------ End Right Div ------------------------------------->
             
     
-	</div> <!--end content/body div -->
+	</div> 
+   	<!-------------------------------End Main content/body div ------------------------------>
     
-    <!-- Footer div -->
+    
+    <!----------------------------------- Footer div ------------------------------------->
     <div id="footer">
     <p>footer info</p>
-    </div>  <!-- Footer div -->
+    </div>  
+    <!------------------------------------ Footer div ------------------------------------->
    	
-</div>  <!-- End Main div -->
+	  
 </div>
+<!---------------------------------------- End Wrapper div ---------------------------------->
+
 
 <script type="text/javascript">
 $(function()

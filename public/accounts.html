@@ -46,12 +46,9 @@
     <h3>ACCOUNT</h3>
     	<!----------------------- Left Div ------------------------>
     	<div id="content_left">
+        	<p><b>Account Info</b></p>
         	<table border="0" align="center">
             	<tr>
-                	<th colspan="2" style="text-align:left">Account Info</th>
-             	</tr>
-            
-          		<tr>
             		<td>User Name:</td>
             		<td>
               		  <input name="username" type="text" id="username" size="30" 
@@ -65,7 +62,7 @@
             		<td>
               		  	<input name="Email" type="text" id="email" size="30" 
              		    data-validation="length alphanumeric" data-validation-length="1-10" 
-            	   		 data-validation-error-msg= "no special characters"/>
+            	   		 data-validation-error-msg= "no special characters" placeholder="Enter your email" />
                	</td>
         		</tr>
 			
@@ -73,25 +70,25 @@
            	 	<td>Password:</td>
            	 	<td>
            		     <input name="pass_confirmation" type="password" id="pass_confirmation" size="30"
-             			  data-validation="strength" data-validation-strength="2"/>
+             			  data-validation="strength" data-validation-strength="2" placeholder="Type your password" />
              	 	</td>
         		</tr>
-
-        		<tr>
-           	 	<td colspan="2" align="center"><input type="button" id="acc_submit" value="submit"></td>
-          		</tr>
-        	</table>
+			</table>
+			
+            <center><input type="button" id="acc_submit" value="submit"> | 
+            <input type="button" id="clear" value="Clear"></center>
+            
+        	
         
         	<div id="inside_left_div">
+            
+            	<p><b>Your Friends</b></p>
             	<table>
-                	<tr>
-                    	<th style="text-align:left">Friends</th>
-                  </tr>
                   <tr>
                   	<td>
               				<input name="username" type="text" id="username" size="30" 
              	   			data-validation="length 			alphanumeric" data-validation-length="1-10" 
-            	   			data-validation-error-msg= "no special characters"/>
+            	   			data-validation-error-msg= "no special characters" placeholder="Friend 1 (self-populated)" />
                 		</td>
                   
                   </tr>
@@ -100,7 +97,7 @@
                   	<td>
               				<input name="username" type="text" id="username" size="30" 
              	   			data-validation="length 			alphanumeric" data-validation-length="1-10" 
-            	   			data-validation-error-msg= "no special characters"/>
+            	   			data-validation-error-msg= "no special characters" placeholder="Friend 2 (self-populated)" />
                 		</td>
                   
                   </tr>
@@ -109,7 +106,7 @@
                   	<td>
               				<input name="username" type="text" id="username" size="30" 
              	   			data-validation="length 			alphanumeric" data-validation-length="1-10" 
-            	   			data-validation-error-msg= "no special characters"/>
+            	   			data-validation-error-msg= "no special characters" placeholder="Friend 3 (self-populated)" />
                 		</td>
                   
                   </tr>
@@ -118,7 +115,7 @@
                   	<td>
               				<input name="username" type="text" id="username" size="30" 
              	   			data-validation="length 			alphanumeric" data-validation-length="1-10" 
-            	   			data-validation-error-msg= "no special characters"/>
+            	   			data-validation-error-msg= "no special characters" placeholder="Friend 4 (self-populated)" />
                 		</td>
                   
                   </tr>
@@ -127,7 +124,7 @@
                   	<td>
               				<input name="username" type="text" id="username" size="30" 
              	   			data-validation="length 			alphanumeric" data-validation-length="1-10" 
-            	   			data-validation-error-msg= "no special characters"/>
+            	   			data-validation-error-msg= "no special characters" placeholder="Friend 5 (self-populated)" />
                 		</td>
                   
                   </tr>
@@ -137,15 +134,14 @@
          	</div>
          
          </div>
+        <div class="centerVerticalLine">
         
+        </div>
         
        <!------------------------------------ Right Div ------------------------------------->
       	<div id="content_right">
-        	<table>
-            	<tr>
-                	<th colspan="2" style="text-align:left">Your Stories</th>
-             	</tr>
-        	</table>
+        
+            <p><b>Your Stories</b></p>
             
           	<div id="story1">
             	Story 1
@@ -157,26 +153,23 @@
             
            <div id="story3">
             	Story 3
-         	</div>	
-            
-           <center><input type="button" id="load" value="Load More"></center>
-           
-      	</div>
-        
+         	</div>
+            	<center><input type="button" id="load" value="Load More"></center>
+           </div>    
+	</div> 
+    <!----------------------------------- end Main content/body div ----------------------------------->
     
     
-    
-    
-    
-	</div> <!--end Main content/body div -->
-    
-    <!-- Footer div -->
+	<!---------------------------------------- Footer div --------------------------------------------->
     <div id="footer">
     <p>footer info</p>
-    </div>  <!-- Footer div -->
+    </div>  
+    <!---------------------------------------- Footer div --------------------------------------------->
    	
-</div>  <!-- End Main div -->
+</div>  
+<!----------------------------------------- End Main div -------------------------------------->
 
+<!------------------------------------------- Functions ------------------------------>
 
 <script type="text/javascript">
 $(function()
@@ -188,6 +181,8 @@ $(function()
 	}); 
 });
 </script>
+
+<!----------------------------------------->
 
 <script>
 	$(document).ready(function() {
@@ -204,6 +199,8 @@ $(function()
 
 </script>
 
+<!----------------------------------------->
+
 <script>
 $.validate({
     modules : 'security, location', 
@@ -214,6 +211,8 @@ $.validate({
  });
 $('#comment').restrictLength($('#maxlength'));
 </script>
+
+<!--------------------------------------------- End Functions ----------------------------------------------->
 
 </body>
 </html>
