@@ -1,7 +1,15 @@
 Teamawesome::Application.routes.draw do
+
+  get "static_pages/home"
+  get "static_pages/new_user"
+  get "static_pages/voting"
+  get "static_pages/accounts"
+  get "static_pages/about"
+  get "static_pages/contactus"
   resources :microposts
 
   resources :users
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
