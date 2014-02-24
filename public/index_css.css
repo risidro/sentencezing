@@ -172,6 +172,7 @@ body {
 	font-size: 100%;
 }
 
+<<<<<<< HEAD
 body h3{
 		text-shadow: 5px 5px 6px dimgrey;
 		font-family: Georgia, "Times New Roman", Times, serif;
@@ -185,6 +186,22 @@ body h3{
 	
 
 <!------------------------ Modifiers ----------------------------------->
+=======
+<<<<<<< master
+h3 
+{
+=======
+h3 {
+>>>>>>> 5d5aba1 brian mergin
+	text-align: center;   
+}
+
+p {
+	text-align: center;
+}
+
+<!-- Modifiers -->
+>>>>>>> 496c2bcaae4f89bc0bfc720fa9b8bb05f9ee4aa4
 
 .center
 {
