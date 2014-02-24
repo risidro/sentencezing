@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   validates :email, :password, :presence => true
-  validates :email, :format => {:with => [-0-9a-zA-Z.+_]+@[-0-9a-zA-Z.+_]+\.[a-zA-Z]{2,4}
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  validates :email, format: { with: VALID_EMAIL_REGEX}
   validates :email, :uniqueness => true
   validates :password, :length => {:minimum => 6}
   has_many :microposts
