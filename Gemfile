@@ -5,9 +5,11 @@ gem 'rails', '4.0.2'
 
 ruby '1.9.3'
 
+group :development do
+  gem 'sqlite3', '1.3.8'
+end
 
 group :development, :test do
-  gem 'sqlite3', '1.3.8'
   gem 'rspec-rails'
 end
 
@@ -54,5 +56,9 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# heroku production DB
+group :production do
+      gem 'pg', '0.15.1'
+end
 
 
