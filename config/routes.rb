@@ -1,4 +1,8 @@
 Teamawesome::Application.routes.draw do
+  resources :user_stories
+
+  resources :stories
+
   root 'static_pages#home'                                           
   get "static_pages/new_user"
   get "static_pages/voting"
